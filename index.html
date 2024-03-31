@@ -1,44 +1,342 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/207ceca2f0.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Felipe Valentín M. - Inicio</title>
+
+    <style>
+        nav {
+            border-bottom: 10px solid #ffff0a;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+
+            padding-top: 90px;
+        }
+
+        footer {
+            border-top: 10px solid #ffff0a;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FValentin1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Proyectos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PLECAD</a></li>
+                            <li><a class="dropdown-item" href="#">Centinela Biobío</a></li>
+                            <li><a class="dropdown-item" href="#">Envejecer Saludable</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Advertencia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <h6 class="text-danger">Este sitio se encuentra en construcción</h6>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+
+    <div class="container">
+
+        <div class="row inicio">
+            <div class="col-lg-12">
+                <h1>Felipe Valentín M.</h1>
+                <p>Ingeniero Civil Informático de la UCSC</p>
+            </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="row servicios">
+            <h1>Servicios</h1>
+            <div class="col-lg-12">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <!-- Servicio 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Desarrollo Web con framework Laravel
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Desarrollo de aplicaciones web con el framework PHP Laravel, con
+                                propósitos
+                                como gestión o control de inventario, sitios web informativos, despliegue de datos con
+                                mapas o
+                                gráficos, e-commerce, etc.
+
+                                Es posible la creación de una aplicación web a medida de sus necesidades.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Asesoría de soluciones informáticas
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                ¿Tienes un problema con algún software? Contáctame, puedo orientarte con tu problema,
+                                proponerte
+                                soluciones o trabajar juntos para una solución.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Desarrollo de soluciones con Python
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Si necesitas automatizar un proceso, generar algún reporte a través de datos, o
+                                visualizar
+                                información mediante gráficos, mediante Python podré desarrollar lo solicitado. El
+                                amplio abanico de
+                                librerías de este lenguaje, permiten brindar soluciones profesionales y a la medida de
+                                lo que
+                                necesite.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Servicio 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Docente universitario
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Con experiencia en realizar ayudantías (cátedras y laboratorios)
+                                en los
+                                cursos de Sistemas Digitales y Arquitectura de Computadores, correspondientes a la
+                                carrera de
+                                Ingeniería Civil en Informática, de la Facultad de Ingeniería de la UCSC, en formatos
+                                virtual y
+                                presencial.
+                                Actualmente realizo un taller del curso de Lógica y Programación para Negocios, curso
+                                correspondiente a la carrera de Ingeniería en Información y Control de Gestión, de la
+                                Facultad de
+                                Ciencias Económicas y Administrativas de la UCSC.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="row proyectos">
+            <h1>Proyectos</h1>
+
+            <!-- PLECAD -->
+            <div class="col-12 p-3">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card-body">
+                                <h5 class="card-title">PLECAD</h5>
+                                <p class="card-text">
+                                    Proyecto de la Universidad Católica de la Santísima Concepción, que busca
+                                    desarrollar un sistema de información para la gestión de la calidad del aire en la
+                                    Región del Biobío
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        Last updated now
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Centinela Biobío -->
+            <div class="col-12 p-3">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card-body">
+                                <h5 class="card-title">Centinela Biobío</h5>
+                                <p class="card-text">
+                                    Proyecto de la Universidad Católica de la Santísima Concepción, para la
+                                    creación del Centro de Aguas Residuales Centinela Biobío.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        Last updated now
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Envejecer Saludable -->
+            <!-- Centinela Biobío -->
+            <div class="col-12 p-3">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h1>LOGO</h1>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="card-body">
+                                <h5 class="card-title">Envejecer Saludable</h5>
+                                <p class="card-text">
+                                    Proyecto e iniciativa de la Universidad Católica de la Santísima Concepción, para un
+                                    envejecer saludable de los adultos mayores, mediante una plataforma de ayuda.
+                                </p>
+                                <p class="card-text">
+                                    <small class="text-muted">
+                                        Last updated now
+                                    </small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <div class="row contacto">
+            <div class="col-lg-12">
+                <h1>Contacto</h1>
+            </div>
+
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+    </div>
+
+
+
+    <footer
+        class="fin d-flex flex-wrap justify-content-between align-items-center pt-3 pb-3 ps-5 pe-5 bg-dark text-white">
+        <div class="col-12 d-flex align-items-center">
+            <span class="text-white">&copy; 2024 - Felipe Valentín M.</span>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <script>
+        $(document).ready(function(){
+            $(".modal").modal('show');
+        });
+    </script>
+</body>
+
 </html>
