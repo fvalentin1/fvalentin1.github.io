@@ -24,6 +24,10 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="servicios.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
 
     <title>Inicio - Felipe Valentín</title>
 
@@ -50,24 +54,11 @@
             /* height: 100%; */
         }
 
-        .carousel-item img {
-            height: 400px;
-            /* Ajusta este valor a la altura que desees */
-            width: auto;
-            /* Esto mantendrá la relación de aspecto de la imagen */
-            object-fit: cover;
-            /* Esto recortará la imagen si no encaja en el contenedor */
-        }
-
         /* html {
             scroll-behavior: smooth;
         } */
 
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: yellow;
-            /* Cambia 'black' al color que desees */
-        }
+        
     </style>
 
 </head>
@@ -123,49 +114,6 @@
 
     <div class="container">
 
-        <div class="row inicio">
-            <div class="col-lg-12">
-                <br>
-                <hr>
-                <br>
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://programamos.es/web/wp-content/uploads/2020/04/python.jpg"
-                                class="d-block w-100" alt="Código Python genérico en un monitor">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://www.circuitbasics.com/wp-content/uploads/2020/09/Raspberry-Pi-to-Arduino-Using-Firmata-Featured-scaled.jpg"
-                                class="d-block w-100" alt="Proyecto de domótica con Arduino">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://automating-gis-processes.github.io/2017/_images/static_map.png"
-                                class="d-block w-100" alt="Gráfico en Python">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
         <br>
         <hr id="servicios">
         <br>
@@ -183,100 +131,62 @@
                 </div>
             </div>
 
-            <div class="col-lg-12">
+            <div class="contenido">
 
-                <br>
-
-
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-
-                    <!-- Servicio 1 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                Desarrollo de Páginas Web
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Desarrollo de sitios o aplicaciones web con el framework PHP Laravel, con
-                                propósitos como gestión o control de inventario, sitios web informativos, despliegue de datos con
-                                mapas o gráficos, e-commerce, etc.
-
-                                Es posible la creación de una aplicación web a medida de sus necesidades.
+                <div class="container mt-5">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="service-card">
+                                <img src="https://acuabit.es/wp-content/uploads/2021/12/responsive-diseno.png" alt="Servicio 1">
+                                <div class="service-name">Desarrollo de páginas web</div>
+                                <div class="overlay">
+                                    <p>Desarrollo de sitios o aplicaciones web con el framework PHP Laravel, con
+                                        propósitos como gestión o control de inventario, sitios web informativos, despliegue de datos con
+                                        mapas o gráficos, e-commerce, etc.
+                
+                                        Es posible la creación de una aplicación web a medida de sus necesidades.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service-card">
+                                <img src="https://blog.facialix.com/wp-content/uploads/2024/01/curso_python_conociendo_lenguaje_udemy_gratis.jpg" alt="Servicio 2">
+                                <div class="service-name">Desarrollo en Python</div>
+                                <div class="overlay">
+                                    <p>Si necesitas automatizar un proceso, generar algún reporte a través de datos, o
+                                        visualizar información mediante gráficos, mediante Python podré desarrollar lo solicitado.
+                                        El amplio abanico de librerías de este lenguaje, permiten brindar soluciones profesionales
+                                        y a la medida de lo que necesite.
+                                        
+                                        Además de desarrollo de scripts, también se pueden desarrollar aplicaciones web con Flask o Django.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service-card">
+                                <img src="https://sitios.ucsc.cl/apoyopsicoeducativo/wp-content/uploads/sites/137/2021/05/4-1200x620.jpg" alt="Servicio 3">
+                                <div class="service-name">Docente universitario</div>
+                                <div class="overlay">
+                                    <p>Con experiencia en realizar ayudantías (cátedras y laboratorios)
+                                        en los cursos de Sistemas Digitales y Arquitectura de Computadores, correspondientes a la
+                                        carrera de Ingeniería Civil en Informática, de la Facultad de Ingeniería de la UCSC, en formatos
+                                        virtual y presencial. Tambien he realizado clases particulares de Bases de Datos.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="service-card">
+                                <img src="https://www.cisinformatica.cat/wp-content/uploads/2024/02/soporte-informatico-para-gestorias.jpg" alt="Servicio 4">
+                                <div class="service-name">Asesoría de soluciones informáticas</div>
+                                <div class="overlay">
+                                    <p>¿Tienes un problema con algún programa? ¿O con un componente de tu computador? Contáctame, puedo orientarte con tu problema,
+                                        proponerte soluciones y trabajar juntos.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Servicio 2 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                Asesoría de soluciones informáticas
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                ¿Tienes un problema con algún software? Contáctame, puedo orientarte con tu problema,
-                                proponerte soluciones o trabajar juntos para una solución.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Servicio 3 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                Desarrollo de soluciones con Python
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                Si necesitas automatizar un proceso, generar algún reporte a través de datos, o
-                                visualizar
-                                información mediante gráficos, mediante Python podré desarrollar lo solicitado. El
-                                amplio abanico de
-                                librerías de este lenguaje, permiten brindar soluciones profesionales y a la medida de
-                                lo que necesite.
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Servicio 4 -->
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                                Docente universitario
-                            </button>
-                        </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Con experiencia en realizar ayudantías (cátedras y laboratorios)
-                                en los cursos de Sistemas Digitales y Arquitectura de Computadores, correspondientes a la
-                                carrera de Ingeniería Civil en Informática, de la Facultad de Ingeniería de la UCSC, en formatos
-                                virtual y presencial.
-                                <!-- <br>
-                                Actualmente realizo ayudantía de Lógica y Programación para Negocios, curso
-                                correspondiente a la carrera de Ingeniería en Información y Control de Gestión, de la
-                                Facultad de Ciencias Económicas y Administrativas de la UCSC. -->
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-
-
-
 
             </div>
         </div>
