@@ -10,7 +10,9 @@
 .texto-header {
     position: relative;
     z-index: 2; /* Aseguramos que el texto esté encima del canvas */
-    text-shadow: black 0px 0px 10px;
+    text-shadow: black 0px 0px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .name {
@@ -27,8 +29,6 @@
 .description {
     font-size: 1.5rem;
     color: white;
-    padding-left: 10%;
-    padding-right: 10%;
 
     /* Fuente manoescrita */
     font-family: "Caveat", cursive;

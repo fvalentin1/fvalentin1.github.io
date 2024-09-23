@@ -4,6 +4,9 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let particlesArray = [];
+let isMouseMoving = false;
+let lastMouseMove = 0;
+let autoParticleInterval = 100; // Intervalo para crear partículas automáticas
 
 // Clase para manejar partículas
 class Particle {
@@ -35,11 +38,15 @@ class Particle {
 }
 
 function handleMouseMove(event) {
+  isMouseMoving = true;
+  lastMouseMove = Date.now();
+  
   const x = event.clientX;
   const y = event.clientY;
   particlesArray.push(new Particle(x, y)); // Crear nuevas partículas en la posición del mouse
 }
 
+// Animación de partículas
 function animateParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height); // Limpiar el canvas
 
@@ -54,7 +61,21 @@ function animateParticles() {
       i--; // Ajustar índice después de eliminar una partícula
     }
   }
+
+  // Crear partículas aleatorias si el mouse no se ha movido recientemente
+  const timeSinceLastMouseMove = Date.now() - lastMouseMove;
+  if (!isMouseMoving || timeSinceLastMouseMove > 1000) {
+    createRandomParticle();
+  }
+
   requestAnimationFrame(animateParticles); // Animar constantemente
+}
+
+// Crear una partícula en una posición aleatoria
+function createRandomParticle() {
+  const randomX = Math.random() * canvas.width;
+  const randomY = Math.random() * canvas.height;
+  particlesArray.push(new Particle(randomX, randomY));
 }
 
 // Detectar movimiento del mouse
