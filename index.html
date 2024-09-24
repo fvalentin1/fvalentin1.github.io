@@ -54,6 +54,33 @@
             /* height: 100%; */
         }
 
+        .servicios {
+            background-color: #0f0f0f;
+            padding: 50px 0;
+        }
+
+        .proyectos {
+            background-color: #4c4f50;
+            padding: 50px 0;
+        }
+
+        .contacto {
+            background-color: #0f0f0f;
+            padding: 50px 0;
+        }
+
+        .servicios .titulo {
+            color: #ffff0a;
+        }
+
+        .proyectos .titulo {
+            color: #ffff0a;
+        }
+
+        .contacto .titulo {
+            color: #ffff0a;
+        }
+
         /* html {
             scroll-behavior: smooth;
         } */
@@ -110,168 +137,63 @@
             Junto a lo anterior, he integrado equipos multidisciplinarios en proyectos CORFO, FIC y FNDR financiados por el Gobierno Regional del Biobío.</p>
         </div>
         <canvas id="backgroundCanvas"></canvas>
-      </header>
+    </header>
 
-    <div class="container">
-
-        <br>
-        <hr id="servicios">
-        <br>
-
-        <div class="row servicios">
-            <div class="encabezado">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="titulo pt-3 pb-2 bg-dark text-white">
-                                <h2 class="text-center"><i class="fa-solid fa-list-check"></i> Servicios</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contenido">
-
-                <div class="container mt-5">
-                    <div class="row row-cols-1 row-cols-md-2 g-4">
-                        <div class="col">
-                            <div class="service-card">
-                                <img src="https://acuabit.es/wp-content/uploads/2021/12/responsive-diseno.png" alt="Servicio 1">
-                                <div class="service-name">Desarrollo de páginas web</div>
-                                <div class="overlay">
-                                    <p>Desarrollo de sitios o aplicaciones web con el framework PHP Laravel, con
-                                        propósitos como gestión o control de inventario, sitios web informativos, despliegue de datos con
-                                        mapas o gráficos, e-commerce, etc.
-                
-                                        Es posible la creación de una aplicación web a medida de sus necesidades.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="service-card">
-                                <img src="https://blog.facialix.com/wp-content/uploads/2024/01/curso_python_conociendo_lenguaje_udemy_gratis.jpg" alt="Servicio 2">
-                                <div class="service-name">Desarrollo en Python</div>
-                                <div class="overlay">
-                                    <p>Si necesitas automatizar un proceso, generar algún reporte a través de datos, o
-                                        visualizar información mediante gráficos, mediante Python podré desarrollar lo solicitado.
-                                        El amplio abanico de librerías de este lenguaje, permiten brindar soluciones profesionales
-                                        y a la medida de lo que necesite.
-                                        
-                                        Además de desarrollo de scripts, también se pueden desarrollar aplicaciones web con Flask o Django.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="service-card">
-                                <img src="https://sitios.ucsc.cl/apoyopsicoeducativo/wp-content/uploads/sites/137/2021/05/4-1200x620.jpg" alt="Servicio 3">
-                                <div class="service-name">Docente universitario</div>
-                                <div class="overlay">
-                                    <p>Con experiencia en realizar ayudantías (cátedras y laboratorios)
-                                        en los cursos de Sistemas Digitales y Arquitectura de Computadores, correspondientes a la
-                                        carrera de Ingeniería Civil en Informática, de la Facultad de Ingeniería de la UCSC, en formatos
-                                        virtual y presencial. Tambien he realizado clases particulares de Bases de Datos.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="service-card">
-                                <img src="https://www.cisinformatica.cat/wp-content/uploads/2024/02/soporte-informatico-para-gestorias.jpg" alt="Servicio 4">
-                                <div class="service-name">Asesoría de soluciones informáticas</div>
-                                <div class="overlay">
-                                    <p>¿Tienes un problema con algún programa? ¿O con un componente de tu computador? Contáctame, puedo orientarte con tu problema,
-                                        proponerte soluciones y trabajar juntos.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <section class="servicios" id="servicios">
+        <div class="titulo">
+            <h2 class="text-center"><i class="fa-solid fa-list-check"></i> Servicios</h2>
         </div>
+        <div class="contenido">
 
-        <br>
-        <hr>
-        <br>
-
-        <div class="row proyectos">
-            <div class="encabezado pb-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="titulo pt-3 pb-2 bg-dark text-white">
-                                <h2 class="text-center"><i class="fa-solid fa-chalkboard-user"></i> Proyectos</h2>
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="service-card">
+                            <img src="https://acuabit.es/wp-content/uploads/2021/12/responsive-diseno.png" alt="Servicio 1">
+                            <div class="service-name">Desarrollo de páginas web</div>
+                            <div class="overlay">
+                                <p>Desarrollo de sitios o aplicaciones web con el framework PHP Laravel, con
+                                    propósitos como gestión o control de inventario, sitios web informativos, despliegue de datos con
+                                    mapas o gráficos, e-commerce, etc.
+            
+                                    Es posible la creación de una aplicación web a medida de sus necesidades.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- PLECAD -->
-            <div class="col-12 p-2">
-                <div class="card">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 p-5">
-                            <img class="logoproyecto" src="logos/plecad.png" alt="">
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <div class="card-body">
-                                <h5 class="card-title">PLECAD</h5>
-                                <p class="card-text">
-                                    Proyecto de la Universidad Católica de la Santísima Concepción, que busca
-                                    desarrollar un sistema de información para la gestión de la calidad del aire en la
-                                    Región del Biobío.
-                                </p>
-                                <p class="card-text">
-                                    <a class="btn btn-outline-primary" href="plecad.html">Más información</a>
+                    <div class="col">
+                        <div class="service-card">
+                            <img src="https://blog.facialix.com/wp-content/uploads/2024/01/curso_python_conociendo_lenguaje_udemy_gratis.jpg" alt="Servicio 2">
+                            <div class="service-name">Desarrollo en Python</div>
+                            <div class="overlay">
+                                <p>Si necesitas automatizar un proceso, generar algún reporte a través de datos, o
+                                    visualizar información mediante gráficos, mediante Python podré desarrollar lo solicitado.
+                                    El amplio abanico de librerías de este lenguaje, permiten brindar soluciones profesionales
+                                    y a la medida de lo que necesite.
+                                    
+                                    Además de desarrollo de scripts, también se pueden desarrollar aplicaciones web con Flask o Django.
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Centinela Biobío -->
-            <div class="col-12 p-2">
-                <div class="card">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 p-5">
-                            <img class="logoproyecto" src="logos/centinela.png" alt="">
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <div class="card-body">
-                                <h5 class="card-title">Centinela Biobío</h5>
-                                <p class="card-text">
-                                    Proyecto de la Universidad Católica de la Santísima Concepción, para la
-                                    creación del Centro de Aguas Residuales Centinela Biobío.
-                                </p>
-                                <p class="card-text">
-                                    <a class="btn btn-outline-primary" href="centinela.html">Más información</a>
-                                </p>
+                    <div class="col">
+                        <div class="service-card">
+                            <img src="https://sitios.ucsc.cl/apoyopsicoeducativo/wp-content/uploads/sites/137/2021/05/4-1200x620.jpg" alt="Servicio 3">
+                            <div class="service-name">Docente universitario</div>
+                            <div class="overlay">
+                                <p>Con experiencia en realizar ayudantías (cátedras y laboratorios)
+                                    en los cursos de Sistemas Digitales y Arquitectura de Computadores, correspondientes a la
+                                    carrera de Ingeniería Civil en Informática, de la Facultad de Ingeniería de la UCSC, en formatos
+                                    virtual y presencial. Tambien he realizado clases particulares de Bases de Datos.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- Envejecer Saludable -->
-            <div class="col-12 p-2">
-                <div class="card">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 p-5">
-                            <img class="logoproyecto" src="logos/envejecimiento.png" alt="">
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <div class="card-body">
-                                <h5 class="card-title">Envejecer Saludable</h5>
-                                <p class="card-text">
-                                    Proyecto e iniciativa de la Universidad Católica de la Santísima Concepción, para un
-                                    envejecer saludable de los adultos mayores, mediante una plataforma de ayuda.
-                                </p>
-                                <p class="card-text">
-                                    <a class="btn btn-outline-primary" href="envejecimiento.html">Más información</a>
-                                </p>
+                    <div class="col">
+                        <div class="service-card">
+                            <img src="https://www.cisinformatica.cat/wp-content/uploads/2024/02/soporte-informatico-para-gestorias.jpg" alt="Servicio 4">
+                            <div class="service-name">Asesoría de soluciones informáticas</div>
+                            <div class="overlay">
+                                <p>¿Tienes un problema con algún programa? ¿O con un componente de tu computador? Contáctame, puedo orientarte con tu problema,
+                                    proponerte soluciones y trabajar juntos.</p>
                             </div>
                         </div>
                     </div>
@@ -279,93 +201,161 @@
             </div>
 
         </div>
+    </section>
 
-        <br>
-        <hr>
-        <br>
-
-        <div class="row contacto" id="contacto">
-
-            <div class="encabezado pb-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="titulo pt-3 pb-2 bg-dark text-white">
-                                <h2 class="text-center"><i class="fa-solid fa-address-card"></i> Contacto</h2>
+    <section class="proyectos" id="proyectos">
+        <div class="titulo">
+            <h2 class="text-center"><i class="fa-solid fa-chalkboard-user"></i> Proyectos</h2>
+        </div>
+        <div class="contenido">
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- PLECAD -->
+                    <div class="col-12 p-2">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 p-5">
+                                    <img class="logoproyecto" src="logos/plecad.png" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PLECAD</h5>
+                                        <p class="card-text">
+                                            Proyecto de la Universidad Católica de la Santísima Concepción, que busca
+                                            desarrollar un sistema de información para la gestión de la calidad del aire en la
+                                            Región del Biobío.
+                                        </p>
+                                        <p class="card-text">
+                                            <a class="btn btn-outline-warning" href="plecad.html">Más información</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Centinela Biobío -->
+                    <div class="col-12 p-2">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 p-5">
+                                    <img class="logoproyecto" src="logos/centinela.png" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Centinela Biobío</h5>
+                                        <p class="card-text">
+                                            Proyecto de la Universidad Católica de la Santísima Concepción, para la
+                                            creación del Centro de Aguas Residuales Centinela Biobío.
+                                        </p>
+                                        <p class="card-text">
+                                            <a class="btn btn-outline-primary" href="centinela.html">Más información</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Envejecer Saludable -->
+                    <div class="col-12 p-2">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-12 p-5">
+                                    <img class="logoproyecto" src="logos/envejecimiento.png" alt="">
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Envejecer Saludable</h5>
+                                        <p class="card-text">
+                                            Proyecto e iniciativa de la Universidad Católica de la Santísima Concepción, para un
+                                            envejecer saludable de los adultos mayores, mediante una plataforma de ayuda.
+                                        </p>
+                                        <p class="card-text">
+                                            <a class="btn btn-outline-primary" href="envejecimiento.html">Más información</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <!-- LinkedIn -->
-            <div class="col-12 p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-linkedin" style="width: 20px; height: 20px; margin-right: 10px;"></i>
-                            <div>
-                                LinkedIn: <a href="https://www.linkedin.com/in/fvalentin1/" target="_blank">Felipe
-                                    Valentín M.</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Correo -->
-            <div class="col-12 p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-envelope" style="width: 20px; height: 20px; margin-right: 10px;"></i>
-                            <div>
-                                Correo: <a href="mailto:fvalentin01@hotmail.com">fvalentin01@hotmail.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- GitHub -->
-            <div class="col-12 p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-github" style="width: 20px; height: 20px; margin-right: 10px;"></i>
-                            <div>
-                                GitHub: <a href="https://github.com/fvalentin1/">fvalentin1</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- WhatsApp -->
-            <!-- <div class="col-12 p-2">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center">
-                            <i class="fa-brands fa-whatsapp" style="width: 20px; height: 20px; margin-right: 10px;"></i>
-                            <div>
-                                WhatsApp: <a href="https://wa.me/569XXXX0000" target="_blank">+569 XXXX
-                                    0000</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
         </div>
 
+    </section>
 
-    </div>
+    <section class="contacto" id="contacto">
+        <div class="titulo">
+            <h2 class="text-center"><i class="fa-solid fa-address-card"></i> Contacto</h2>
+        </div>
+        <div class="contenido">
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- LinkedIn -->
+                    <div class="col-12 p-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-brands fa-linkedin" style="width: 20px; height: 20px; margin-right: 10px;"></i>
+                                    <div>
+                                        LinkedIn: <a href="https://www.linkedin.com/in/fvalentin1/" target="_blank">Felipe
+                                            Valentín M.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <br>
+                    <!-- Correo -->
+                    <div class="col-12 p-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-solid fa-envelope" style="width: 20px; height: 20px; margin-right: 10px;"></i>
+                                    <div>
+                                        Correo: <a href="mailto:fvalentin01@hotmail.com">fvalentin01@hotmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    </div>
+                    <!-- GitHub -->
+                    <div class="col-12 p-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-brands fa-github" style="width: 20px; height: 20px; margin-right: 10px;"></i>
+                                    <div>
+                                        GitHub: <a href="https://github.com/fvalentin1/">fvalentin1</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- WhatsApp -->
+                    <!-- <div class="col-12 p-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-brands fa-whatsapp" style="width: 20px; height: 20px; margin-right: 10px;"></i>
+                                    <div>
+                                        WhatsApp: <a href="https://wa.me/569XXXX0000" target="_blank">+569 XXXX
+                                            0000</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <footer
