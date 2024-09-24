@@ -37,6 +37,7 @@
 
         footer {
             border-top: 10px solid #ffff0a;
+            flex-shrink: 0; /* Esto evitará que el pie de página se reduzca y siempre mantenga su altura completa */
         }
 
         body, html {
@@ -52,9 +53,6 @@
             flex: 1 0 auto; /* Esto hará que el contenedor crezca para ocupar el espacio disponible */
         }
 
-        footer {
-            flex-shrink: 0; /* Esto evitará que el pie de página se reduzca y siempre mantenga su altura completa */
-}
     </style>
 </head>
 
