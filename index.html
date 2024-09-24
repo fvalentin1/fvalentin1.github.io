@@ -33,7 +33,7 @@
 
     <style>
         nav {
-            border-bottom: 10px solid #ffff0a;
+            border-bottom: 10px solid #ffc107;
         }
 
         body {
@@ -46,7 +46,7 @@
         }
 
         footer {
-            border-top: 10px solid #ffff0a;
+            border-top: 10px solid #ffc107;
             flex-shrink: 0; /* Esto evitará que el pie de página se reduzca y siempre mantenga su altura completa */
         }
 
@@ -61,7 +61,7 @@
         }
 
         .proyectos {
-            background-color: #4c4f50;
+            background-color: #212529;
             padding: 50px 0;
         }
 
@@ -71,21 +71,46 @@
         }
 
         .servicios .titulo {
-            color: #ffff0a;
+            color: #ffc107;
         }
 
         .proyectos .titulo {
-            color: #ffff0a;
+            color: #ffc107;
         }
 
         .contacto .titulo {
-            color: #ffff0a;
+            color: #ffc107;
         }
 
         /* html {
             scroll-behavior: smooth;
         } */
 
+        /* Estilos Proyectos */
+        .project-container {
+        background-color: #000;
+        color: #fff;
+        margin-bottom: 30px;
+        padding: 20px;
+        }
+
+        .project-logo {
+        width: 100%;
+        height: auto;
+        }
+
+        .yellow-divider {
+        border-left: 5px solid #ffc107;
+        padding-left: 15px;
+        }
+
+        .project-description {
+        margin-top: 10px;
+        }
+        
+        .project-button {
+        margin-top: 15px;
+        }
         
     </style>
 
@@ -209,84 +234,64 @@
             <h2 class="text-center"><i class="fa-solid fa-chalkboard-user"></i> Proyectos</h2>
         </div>
         <div class="contenido">
-            <div class="container mt-5">
-                <div class="row">
-                    <!-- PLECAD -->
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12 p-5">
-                                    <img class="logoproyecto" src="logos/plecad.png" alt="">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="card-body">
-                                        <h5 class="card-title">PLECAD</h5>
-                                        <p class="card-text">
-                                            Proyecto de la Universidad Católica de la Santísima Concepción, que busca
-                                            desarrollar un sistema de información para la gestión de la calidad del aire en la
-                                            Región del Biobío.
-                                        </p>
-                                        <p class="card-text">
-                                            <a class="btn btn-outline-warning" href="plecad.html">Más información</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container my-5">
+                <!-- PLECAD -->
+                <div class="row project-container align-items-center">
+                    <div class="col-lg-4 col-12 text-center">
+                        <img src="logos/plecad.png" alt="Logo Proyecto 1" class="project-logo">
+                    </div>
+                    <div class="col-lg-8 col-12 yellow-divider">
+                        <h3>PLECAD</h3>
+                        <p class="project-description">
+                            Proyecto de la Universidad Católica de la Santísima Concepción, que busca
+                            desarrollar un sistema de información para la gestión de la calidad del aire en la
+                            Región del Biobío.
+                        </p>
+                        <div class="text-end">
+                            <a href="plecad.html" class="btn btn-outline-warning project-button">Más información</a>
                         </div>
                     </div>
-
-                    <!-- Centinela Biobío -->
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12 p-5">
-                                    <img class="logoproyecto" src="logos/centinela.png" alt="">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Centinela Biobío</h5>
-                                        <p class="card-text">
-                                            Proyecto de la Universidad Católica de la Santísima Concepción, para la
-                                            creación del Centro de Aguas Residuales Centinela Biobío.
-                                        </p>
-                                        <p class="card-text">
-                                            <a class="btn btn-outline-primary" href="centinela.html">Más información</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Envejecer Saludable -->
-                    <div class="col-12 p-2">
-                        <div class="card">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-4 col-sm-12 p-5">
-                                    <img class="logoproyecto" src="logos/envejecimiento.png" alt="">
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Envejecer Saludable</h5>
-                                        <p class="card-text">
-                                            Proyecto e iniciativa de la Universidad Católica de la Santísima Concepción, para un
-                                            envejecer saludable de los adultos mayores, mediante una plataforma de ayuda.
-                                        </p>
-                                        <p class="card-text">
-                                            <a class="btn btn-outline-primary" href="envejecimiento.html">Más información</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+            
+                <!-- Centinela -->
+                <div class="row project-container align-items-center">
+                    <div class="col-lg-4 col-12 text-center">
+                        <img src="logos/centinela.png" alt="Logo Proyecto 2" class="project-logo">
+                    </div>
+                    <div class="col-lg-8 col-12 yellow-divider">
+                        <h3>Centinela Biobío</h3>
+                        <p class="project-description">
+                            Proyecto de la Universidad Católica de la Santísima Concepción, para la
+                            creación del Centro de Aguas Residuales Centinela Biobío.
+                        </p>
+                        <div class="text-end">
+                            <a href="centinela.html" class="btn btn-outline-warning project-button">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Envejecimiento -->
+                <div class="row project-container align-items-center">
+                    <div class="col-lg-4 col-12 text-center">
+                        <img src="logos/envejecimiento.png" alt="Logo Proyecto 3" class="project-logo">
+                    </div>
+                    <div class="col-lg-8 col-12 yellow-divider">
+                        <h3>Envejecer Saludable</h3>
+                        <p class="project-description">
+                            Proyecto e iniciativa de la Universidad Católica de la Santísima Concepción, para un
+                            envejecer saludable de los adultos mayores, mediante una plataforma de ayuda.
+                        </p>
+                        <div class="text-end">
+                            <a href="envejecimiento.html" class="btn btn-outline-warning project-button">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            
+              </div>
 
         </div>
 
-    </section>
+    </section>    
 
     <section class="contacto" id="contacto">
         <div class="titulo">

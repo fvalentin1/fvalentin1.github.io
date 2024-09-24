@@ -21,8 +21,8 @@ class Particle {
   draw() {
     ctx.beginPath();
     const gradient = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
-    gradient.addColorStop(0, `rgba(255, 255, 0, ${this.alpha})`);
-    gradient.addColorStop(1, `rgba(255, 255, 0, 0)`); // Desvanecimiento gradual
+    gradient.addColorStop(0, `rgba(255, 193, 7, ${this.alpha})`); // Color Amarillo #ffc107 (RGB 255-193-7)
+    gradient.addColorStop(1, `rgba(255, 193, 7, 0)`); // Desvanecimiento gradual
     ctx.fillStyle = gradient;
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
     ctx.fill();
