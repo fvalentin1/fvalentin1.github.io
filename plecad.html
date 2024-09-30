@@ -25,7 +25,7 @@
 
     <style>
         nav {
-            border-bottom: 10px solid #ffff0a;
+            border-bottom: 10px solid #ffc107;
         }
 
         body {
@@ -33,10 +33,13 @@
             font-optical-sizing: auto;
             font-weight: 700;
             font-style: normal;
+            background-color: #000;
+            color: #fff;
         }
 
         footer {
-            border-top: 10px solid #ffff0a;
+            border-top: 10px solid #ffc107;
+            flex-shrink: 0; /* Esto evitará que el pie de página se reduzca y siempre mantenga su altura completa */
         }
 
         body, html {
@@ -52,16 +55,41 @@
             flex: 1 0 auto; /* Esto hará que el contenedor crezca para ocupar el espacio disponible */
         }
 
-        footer {
-            flex-shrink: 0; /* Esto evitará que el pie de página se reduzca y siempre mantenga su altura completa */
-}
+        h2 {
+            color: #ffc107;
+        }
+
+        h5 {
+            color: #ffc107;
+        }
+
+        .icon-yellow {
+            
+            color: #ffc107;
+        }
+        .section-title {
+            margin-top: 50px;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ffc107;
+        }
+        a {
+            color: #ffc107;
+        }
+        a:hover {
+            color: white;
+        }
+
     </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/"><span class="text-warning">Mi</span> Portafolio</a>
+            <a class="navbar-brand" href="/"><span class="text-warning">Felipe</span> Valentín</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -94,82 +122,124 @@
         </div>
     </nav>
 
-    <!-- Aquí va el contenido de la página -->
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-center mt-1">Plataforma de Evaluación de Calefacción Distrital</h1>
-                <div class="card border-0 pt-2 pb-2" style="height: 200px;">
-                    <img src="logos/plecad.png" alt="Logo Proyecto Plataforma de Evaluación de Calefacción Distrital" style="height: 100%; width: 100%; object-fit: contain;">
-                </div>
+    <header style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gran_Concepci%C3%B3n.jpg/1200px-Gran_Concepci%C3%B3n.jpg'); background-size: cover; background-position: center; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <div class="col-12 pt-5 pb-5 ps-5 pe-5">
+            <h1 class="text-center mt-1 text-white" style="text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);">Plataforma de Evaluación de Calefacción Distrital</h1>
+        </div>
+    </header>
 
+    <!-- DESCRIPCIÓN -->
+    <section class="description container mt-5">
+        <div class="row ps-4 descripcion">
+            <div class="logoproyecto pt-3 pb-3 col-lg-4 col-md-3 col-sm-12">
+                <img src="logos/plecad.png" alt="Logo Proyecto Plataforma de Evaluación de Calefacción Distrital" style="height: 100%; width: 100%; object-fit: contain;">
             </div>
-            <div class="col-12">
+            <div class="descripcionproyecto col-lg-8 col-md-9 col-sm-12" style="position: relative;">
+                <h5 class="section-title">Descripción del proyecto:</h5>
+                <p style="text-align: justify;">La Plataforma de Evaluación de Calefacción Distrital (PLECAD) es un proyecto Fondo de Innovación para la Competitividad
+                    FIC-R financiado por el Gobierno Regional del Biobío, y consiste en una plataforma web que permitirá a los usuarios evaluar la posible
+                    implementación de un sistema de calefacción distrital según las características de su localidad.
+                    Su director (A) es el Dr. <a href="https://ingenieria.ucsc.cl/autoridades/eduardo-espinosa-neira/">Eduardo Espinosa Neira.</a>
+                </p>
+            </div>                
+        </div>
+    </section>
 
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Descripción</h5>
-                        <p class="card-text">La Plataforma de Evaluación de Calefacción Distrital (PLECAD) es un proyecto Fondo de Innovación para la Competitividad
-                            FIC-R financiado por el Gobierno Regional del Biobío, y consiste en una plataforma web que permitirá a los usuarios evaluar la posible
-                            implementación de un sistema de calefacción distrital según las características de su localidad.
-                            Su director (A) es el Dr. <a href="https://ingenieria.ucsc.cl/autoridades/eduardo-espinosa-neira/">Eduardo Espinosa Neira.</a>
-                            
-                        </p>
-                    </div>        
-                </div>
+    <!-- DESARROLLO -->
+    <section class="container mt-5">
+        <h2 class="text-center section-title">Desarrollo del Proyecto</h2>
+        <p class="text-center mt-3">
+            La plataforma web se encuentra en desarrollo y se espera que esté disponible para su uso en el segundo semestre de 2024. Las funciones backend realizadas en este proyecto son:
+        </p>
+    </section>
 
-                <div class="card text-bg-warning mt-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Desarrollo</h5>
-                        <p class="card-text">La plataforma web se encuentra en desarrollo y se espera que esté disponible para su uso en el
-                            segundo semestre de 2024. Las funciones backend realizadas en este proyecto son:
-                            <br>
-                            <br>
-                            <b>Hitos:</b>
-                            <ul>
-                                <li>Conexión de los dispositivos sensores IQAir indoor y outdoor.</li>
-                                <li>Configuración de la API de cada dispositivo sensor.</li>
-                                <li>Desarrollo de la base de datos en BigQuery (GCP) para almacenar los datos de los sensores.</li>
-                                <li>Extracción de los datos de los sensores, para su posterior almacenamiento en BigQuery a través de Python.</li>
-                                <li>Desarrollo de gráficos en Python a partir de los datos obtenidos por los sensores.</li>
-                                <li>Desarrollo de función para determinar el Índice de Calidad del Aire (AQI US) en Python.</li>
-                                <li>Desarrollo de iframe en Python con gráfico a insertar en la plataforma.</li>
-                                <br>
-                                <li><i>El desarrollo de la plataforma web es independiente a las funciones realizadas por mí. La empresa <b>Puchaki</b> está a cargo
-                                    del desarrollo de ésta.</i>
-                                </li>
-                            </ul>
+    <!-- HITOS -->
+    <section class="container mt-5">
+        <h2 class="text-center section-title">Hitos del Proyecto</h2>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Conexión de los dispositivos sensores IQAir indoor y outdoor</li>
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Configuración de la API de cada dispositivo sensor</li>
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Desarrollo de la base de datos en BigQuery (GCP) para almacenar los datos de los sensores</li>
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Extracción de los datos de los sensores, para su posterior almacenamiento en BigQuery a través de Python</li>
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Desarrollo de gráficos en Python a partir de los datos obtenidos por los sensores</li>
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Desarrollo de función para determinar el Índice de Calidad del Aire (AQI US) en Python</li>
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Desarrollo de iframe en Python con gráfico a insertar en la plataforma</li>
+            <li class="list-group-item bg-black text-white"><i class="fas fa-check icon-yellow"></i> Pruebas</li>
+        </ul>
+    </section>
 
-                            <br>
-                            <b>Tecnologías utilizadas:</b>
-                            <ul>
-                                <li>API IQAir</li>
-                                <li>Python (Pandas, Numpy, Matplotlib, Plotly, entre otras librerías)</li>
-                                <li>Google Cloud Platform (GCP)</li>
-                                <li>BigQuery</li>
-                                <li>Cloud Functions (Crontab)</li>
-                                <li>WordPress</li>
-                                <li>Debian</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="card mt-3 mb-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Enlaces del proyecto</h5>
-                        <p class="card-text">Puedes encontrar más información de PLECAD en:
-                            <ul>
-                                <li><a href="https://www.plecad.cl">Plataforma web oficial <i>(En construcción)</i></a></li>
-                                
-                            </ul>
-                        </p>
-                    </div>
-                </div>
+    <!-- TECNOLOGÍAS UTILIZADAS -->
+    <section class="container mt-5">
+        <h2 class="text-center section-title">Tecnologías Utilizadas</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-3 text-center">
+                <i class="fab fa-html5 icon-yellow fa-3x"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fab fa-css3-alt icon-yellow fa-3x"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fab fa-js-square icon-yellow fa-3x"></i>
+                <p>JavaScript</p>
+            </div>
+            <!-- <div class="col-md-3 text-center">
+                <i class="fab fa-laravel icon-yellow fa-3x"></i>
+                <p>Laravel</p>
+            </div> -->
+            <div class="col-md-3 text-center mt-4">
+                <i class="fas fa-wind icon-yellow fa-3x"></i>
+                <p>API IQAir</p>
+            </div>
+            <div class="col-md-3 text-center mt-4">
+                <i class="fab fa-python icon-yellow fa-3x"></i>
+                <p>Python (Pandas, Numpy, Matplotlib, Plotly)</p>
+            </div>
+            <div class="col-md-3 text-center mt-4">
+                <i class="fab fa-google icon-yellow fa-3x"></i>
+                <p>Google Cloud Platform (GCP)</p>
+            </div>
+            <div class="col-md-3 text-center mt-4">
+                <i class="fas fa-database icon-yellow fa-3x"></i>
+                <p>BigQuery</p>
+            </div>
+            <div class="col-md-3 text-center mt-4">
+                <i class="fas fa-clock icon-yellow fa-3x"></i>
+                <p>Cloud Functions (Crontab)</p>
+            </div>
+            <div class="col-md-3 text-center mt-4">
+                <i class="fab fa-wordpress icon-yellow fa-3x"></i>
+                <p>WordPress</p>
+            </div>
+            <div class="col-md-3 text-center mt-4">
+                <i class="fab fa-linux icon-yellow fa-3x"></i>
+                <p>Debian</p>
             </div>
         </div>
-        
-    </div>
+    </section>
+
+    <!-- ENLACES -->
+    <section class="container mt-5">
+        <h2 class="text-center section-title">Enlaces del Proyecto</h2>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-outline-warning mx-2"><i class="fas fa-link"></i> Repositorio GitHub</a>
+            <a href="https://www.plecad.cl" class="btn btn-outline-warning mx-2"><i class="fas fa-globe"></i> Sitio Web</a>
+        </div>
+    </section>
+
+    <!-- CAPTURAS -->
+    <section class="container mt-5 mb-5">
+        <h2 class="text-center section-title">Capturas del Proyecto</h2>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Captura 1" class="project-image">
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300" alt="Captura 2" class="project-image">
+            </div>
+        </div>
+    </section>
 
     <footer
         class="fin d-flex flex-wrap justify-content-between align-items-center pt-3 pb-3 ps-5 pe-5 bg-dark text-white">
