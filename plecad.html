@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <title>PLECAD - Felipe Valentín M.</title>
+    <title>PLECAD - Felipe Valentín</title>
 
     <style>
         nav {
@@ -48,7 +48,7 @@
             flex-direction: column;
             margin: 0;
             padding: 0;
-            padding-top: 50px;
+            padding-top: 0px;
         }
 
         .container {
@@ -82,6 +82,41 @@
         a:hover {
             color: white;
         }
+
+        
+        /* Header */
+        header {
+            position: relative;
+            background: url('fondos/plecad_BG.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 400px; /* Cambié height por min-height */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Oscurece la imagen de fondo */
+            z-index: 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            z-index: 1;
+            color: #ffc107;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+        }
+
 
     </style>
 </head>
@@ -122,15 +157,14 @@
         </div>
     </nav>
 
-    <header style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gran_Concepci%C3%B3n.jpg/1200px-Gran_Concepci%C3%B3n.jpg'); background-size: cover; background-position: center; height: 100%; display: flex; justify-content: center; align-items: center;">
-        <div class="col-12 pt-5 pb-5 ps-5 pe-5">
-            <h1 class="text-center mt-1 text-white" style="text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);">Plataforma de Evaluación de Calefacción Distrital</h1>
-        </div>
+    <!-- Header -->
+    <header>
+        <h1>Plataforma de Evaluación de Calefacción Distrital</h1>
     </header>
 
     <!-- DESCRIPCIÓN -->
     <section class="description container mt-5">
-        <div class="row ps-4 descripcion">
+        <div class="row descripcion">
             <div class="logoproyecto pt-3 pb-3 col-lg-4 col-md-3 col-sm-12">
                 <img src="logos/plecad.png" alt="Logo Proyecto Plataforma de Evaluación de Calefacción Distrital" style="height: 100%; width: 100%; object-fit: contain;">
             </div>
@@ -223,21 +257,23 @@
     <section class="container mt-5">
         <h2 class="text-center section-title">Enlaces del Proyecto</h2>
         <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-outline-warning mx-2"><i class="fas fa-link"></i> Repositorio GitHub</a>
+            <!-- <a href="#" class="btn btn-outline-warning mx-2"><i class="fas fa-link"></i> Repositorio GitHub</a> -->
             <a href="https://www.plecad.cl" class="btn btn-outline-warning mx-2"><i class="fas fa-globe"></i> Sitio Web</a>
         </div>
     </section>
 
     <!-- CAPTURAS -->
     <section class="container mt-5 mb-5">
-        <h2 class="text-center section-title">Capturas del Proyecto</h2>
+        <h2 class="text-center section-title">Lanzamiento del Proyecto</h2>
         <div class="row mt-4">
+            <div class="col-md-3"></div>
             <div class="col-md-6">
-                <img src="https://via.placeholder.com/500x300" alt="Captura 1" class="project-image">
+                <img src="fondos/plecad_BG.jpg" alt="Lanzamiento del Proyecto" class="project-image">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3"></div>
+            <!-- <div class="col-md-6">
                 <img src="https://via.placeholder.com/500x300" alt="Captura 2" class="project-image">
-            </div>
+            </div> -->
         </div>
     </section>
 
