@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazón con Nota</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilo para el corazón */
+        .heart {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .heart::before, .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            left: 0;
+            top: -50px; /* Desplazamos hacia arriba */
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        /* Animación para abrir el corazón */
+        .open-heart {
+            transform: scale(1.5);
+            transition: all 0.5s ease;
+        }
+
+        /* Estilo para la nota */
+        .note {
+            display: none;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+
+    <div class="text-center">
+        <div class="heart" id="heart"></div>
+        <div class="note" id="note">
+            <p>Si tu fueses una novela, o un libro, serías mi personaje favorita, desearía siempre volver a leer cada capítulo ♥ Te regalo estos libros porque se lo mucho que te gustan estos tipos de libros, y también esa autora. Elegí regalarte nuevamente libros porque también se lo apasionada que eres, lo soñadora que eres, y quiero que sigas encantándote con aventuras y emociones.</p>
+            <p>Te amo mucho mi amorcito, y espero que te guste este pequeño detalle.</p>
+            <p>♥ Disfruta cada página ♥</p>
+            <br>
+            <p>Felipe</p>
+        </div>
+    </div>
+
+    <script>
+        // Manejo del clic para abrir el corazón
+        document.getElementById('heart').addEventListener('click', function() {
+            this.classList.toggle('open-heart');
+            let note = document.getElementById('note');
+            if (this.classList.contains('open-heart')) {
+                note.style.display = 'block';
+            } else {
+                note.style.display = 'none';
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
