@@ -21,13 +21,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="servicios.css">
 
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
@@ -50,7 +52,8 @@
 
         footer {
             border-top: 10px solid #ffc107;
-            flex-shrink: 0; /* Esto evitará que el pie de página se reduzca y siempre mantenga su altura completa */
+            flex-shrink: 0;
+            /* Esto evitará que el pie de página se reduzca y siempre mantenga su altura completa */
         }
 
         .logoproyecto {
@@ -111,18 +114,39 @@
             padding-left: 15px;
         }
 
-        .project-title{
+        .project-title {
             color: #ffc107;
         }
 
         .project-description {
-        margin-top: 10px;
+            margin-top: 10px;
         }
-        
+
         .project-button {
-        margin-top: 15px;
+            margin-top: 15px;
         }
-        
+
+        .role-container {
+            position: relative;
+            display: inline-block;
+            font-size: 2rem;
+        }
+
+        .role-container .placeholder {
+            visibility: hidden;
+            display: inline-block;
+            height: 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .role {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+        }
     </style>
 
 </head>
@@ -131,26 +155,35 @@
 <body>
     <div id="navbar-container"></div>
     <script>
-    fetch("components/navbar.html")
-        .then(res => res.text())
-        .then(data => {
-        document.getElementById("navbar-container").innerHTML = data;
-        });
+        fetch("components/navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar-container").innerHTML = data;
+            });
     </script>
 
 
     <header class="header d-flex justify-content-center align-items-center">
         <div class="text-center texto-header animate__animated animate__fadeInDown">
-          <h1 class="name">Felipe Valentín</h1>
-          
-          <!-- role -->
-          <span id="typed-text" class="role fw-bold text-white"></span>
+            <h1 class="name">Felipe Valentín</h1>
+
+            <!-- role -->
+            <h2 class="role-container">
+                <span id="typed-text" class="role fw-bold text-white"></span>
+                <span class="placeholder"> Docente Universitario </span>
+            </h2>
 
 
-          <p class="description">Soy Ingeniero Civil Informático de la Universidad Católica de la Santísima Concepción.
-            Tengo experiencia en ingeniería y ciencia de datos con Python, y gestión de bases de datos con GCP y BigQuery.
-            Además, tengo experiencia en desarrollo web con framework PHP Laravel, e IOT con Arduino, Raspberry Pi y sensores.
-            Junto a lo anterior, he integrado equipos multidisciplinarios en proyectos CORFO, FIC y FNDR financiados por el Gobierno Regional del Biobío.</p>
+
+
+            <p class="description">Soy Ingeniero Civil Informático de la Universidad Católica de la Santísima
+                Concepción.
+                Tengo experiencia en ingeniería y ciencia de datos con Python, y gestión de bases de datos con GCP y
+                BigQuery.
+                Además, tengo experiencia en desarrollo web con framework PHP Laravel, e IOT con Arduino, Raspberry Pi y
+                sensores.
+                Junto a lo anterior, he integrado equipos multidisciplinarios en proyectos CORFO, FIC y FNDR financiados
+                por el Gobierno Regional del Biobío.</p>
         </div>
         <canvas id="backgroundCanvas"></canvas>
     </header>
@@ -169,9 +202,10 @@
                             <div class="service-name">Desarrollo de páginas web</div>
                             <div class="overlay">
                                 <p>Desarrollo de sitios o aplicaciones web con el framework PHP Laravel, o WordPress con
-                                    propósitos como gestión o control de inventario, sitios web informativos, despliegue de datos con
+                                    propósitos como gestión o control de inventario, sitios web informativos, despliegue
+                                    de datos con
                                     mapas o gráficos, e-commerce, etc.
-            
+
                                     Es posible la creación de una aplicación web a medida de sus necesidades.</p>
                             </div>
                         </div>
@@ -182,11 +216,14 @@
                             <div class="service-name">Desarrollo en Python</div>
                             <div class="overlay">
                                 <p>Si necesitas automatizar un proceso, generar algún reporte a través de datos, o
-                                    visualizar información mediante gráficos, mediante Python podré desarrollar lo solicitado.
-                                    El amplio abanico de librerías de este lenguaje, permiten brindar soluciones profesionales
+                                    visualizar información mediante gráficos, mediante Python podré desarrollar lo
+                                    solicitado.
+                                    El amplio abanico de librerías de este lenguaje, permiten brindar soluciones
+                                    profesionales
                                     y a la medida de lo que necesite.
-                                    
-                                    Además de desarrollo de scripts, también se pueden desarrollar aplicaciones web con Flask o Django.
+
+                                    Además de desarrollo de scripts, también se pueden desarrollar aplicaciones web con
+                                    Flask o Django.
                                 </p>
                             </div>
                         </div>
@@ -197,10 +234,14 @@
                             <div class="service-name">Docente universitario</div>
                             <div class="overlay">
                                 <p>Con experiencia en realizar Cátedras, Ayudantías y Laboratorios, he colaborado
-                                    en los cursos de Sistemas Digitales y Arquitectura de Computadores, correspondientes a la
-                                    carrera de Ingeniería Civil en Informática, de la Facultad de Ingeniería de la UCSC, en formatos
-                                    virtual y presencial. Actualmente, docente titular en los cursos de Ingeniería de Software y Programación Backend
-                                    en la carrera de Ingeniería de Ejecución en Informática del Instituto Tecnológico de la UCSC.
+                                    en los cursos de Sistemas Digitales y Arquitectura de Computadores, correspondientes
+                                    a la
+                                    carrera de Ingeniería Civil en Informática, de la Facultad de Ingeniería de la UCSC,
+                                    en formatos
+                                    virtual y presencial. Actualmente, docente titular en los cursos de Ingeniería de
+                                    Software y Programación Backend
+                                    en la carrera de Ingeniería de Ejecución en Informática del Instituto Tecnológico de
+                                    la UCSC.
                                     Tambien he realizado clases particulares de Bases de Datos SQL.</p>
                             </div>
                         </div>
@@ -210,7 +251,8 @@
                             <img src="services/asesoria.jpg" alt="Servicio 4">
                             <div class="service-name">Asesoría de soluciones informáticas</div>
                             <div class="overlay">
-                                <p>¿Tienes un problema con algún programa? ¿O con un componente de tu computador? Contáctame, puedo orientarte con tu problema,
+                                <p>¿Tienes un problema con algún programa? ¿O con un componente de tu computador?
+                                    Contáctame, puedo orientarte con tu problema,
                                     proponerte soluciones y trabajar juntos.</p>
                             </div>
                         </div>
@@ -240,11 +282,12 @@
                             Región del Biobío.
                         </p>
                         <div class="text-end">
-                            <a href="plecad.html" class="btn btn-outline-warning project-button">Más información <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="plecad.html" class="btn btn-outline-warning project-button">Más información <i
+                                    class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-            
+
                 <!-- Centinela -->
                 <div class="row project-container align-items-center">
                     <div class="col-lg-4 col-12 text-center">
@@ -257,11 +300,12 @@
                             creación del Centro de Aguas Residuales Centinela Biobío.
                         </p>
                         <div class="text-end">
-                            <a href="centinela.html" class="btn btn-outline-warning project-button">Más información <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="centinela.html" class="btn btn-outline-warning project-button">Más información <i
+                                    class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-            
+
                 <!-- Envejecimiento -->
                 <div class="row project-container align-items-center">
                     <div class="col-lg-4 col-12 text-center">
@@ -274,16 +318,17 @@
                             envejecer saludable de los adultos mayores, mediante una plataforma de ayuda.
                         </p>
                         <div class="text-end">
-                            <a href="envejecimiento.html" class="btn btn-outline-warning project-button">Más información <i class="fa-solid fa-chevron-right"></i></a>
+                            <a href="envejecimiento.html" class="btn btn-outline-warning project-button">Más información
+                                <i class="fa-solid fa-chevron-right"></i></a>
                         </div>
                     </div>
                 </div>
-            
-              </div>
+
+            </div>
 
         </div>
 
-    </section>    
+    </section>
 
     <section class="contacto" id="contacto">
         <div class="titulo">
@@ -298,13 +343,16 @@
             </div> -->
             <div class="container mt-5">
                 <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-                    <a href="https://www.linkedin.com/in/fvalentin1/" class="btn btn-outline-warning mx-2 my-2"><i class="fa-brands fa-linkedin"></i> Felipe Valentín M.</a>
-                    <a href="mailto:fvalentin01@hotmail.com" class="btn btn-outline-warning mx-2 my-2"><i class="fa-solid fa-envelope"></i> fvalentin01@hotmail.com</a>
-                    <a href="https://github.com/fvalentin1/" class="btn btn-outline-warning mx-2 my-2"><i class="fa-brands fa-github"></i> fvalentin1</a>
+                    <a href="https://www.linkedin.com/in/fvalentin1/" class="btn btn-outline-warning mx-2 my-2"><i
+                            class="fa-brands fa-linkedin"></i> Felipe Valentín M.</a>
+                    <a href="mailto:fvalentin01@hotmail.com" class="btn btn-outline-warning mx-2 my-2"><i
+                            class="fa-solid fa-envelope"></i> fvalentin01@hotmail.com</a>
+                    <a href="https://github.com/fvalentin1/" class="btn btn-outline-warning mx-2 my-2"><i
+                            class="fa-brands fa-github"></i> fvalentin1</a>
                     <!-- <a href="https://wa.me/569XXXX0000" class="btn btn-outline-warning mx-2 my-2"><i class="fa-brands fa-whatsapp"></i> +569 XXXX 0000</a> -->
                 </div>
             </div>
-              
+
         </div>
 
     </section>
@@ -321,7 +369,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 
     <!-- Header JS -->
     <script src="header.js"></script>
@@ -332,39 +380,40 @@
     <script>
         const phrases = [" Desarrollador ", " Docente Universitario "];
         let currentPhrase = 0;
-        let currentChar = 1; // empezamos desde 1, para mantener el espacio inicial
+        let currentChar = 1;
         let isDeleting = false;
         const speed = 100;
         const pause = 2000;
-      
+
         const el = document.getElementById("typed-text");
-      
+
         function type() {
-          const fullText = phrases[currentPhrase];
-          const visibleText = isDeleting
-            ? fullText.substring(0, currentChar--)
-            : fullText.substring(0, currentChar++);
-      
-          el.textContent = visibleText;
-      
-          if (!isDeleting && currentChar === fullText.length + 1) {
-            setTimeout(() => {
-              isDeleting = true;
-              type();
-            }, pause);
-          } else if (isDeleting && currentChar === 1) {
-            isDeleting = false;
-            currentPhrase = (currentPhrase + 1) % phrases.length;
-            setTimeout(type, 300);
-          } else {
-            setTimeout(type, isDeleting ? 50 : speed);
-          }
+            const fullText = phrases[currentPhrase];
+            const visibleText = isDeleting
+                ? fullText.substring(0, currentChar--)
+                : fullText.substring(0, currentChar++);
+
+            el.textContent = visibleText;
+
+            if (!isDeleting && currentChar === fullText.length + 1) {
+                setTimeout(() => {
+                    isDeleting = true;
+                    type();
+                }, pause);
+            } else if (isDeleting && currentChar === 1) {
+                isDeleting = false;
+                currentPhrase = (currentPhrase + 1) % phrases.length;
+                setTimeout(type, 300);
+            } else {
+                setTimeout(type, isDeleting ? 50 : speed);
+            }
         }
-      
+
         document.addEventListener("DOMContentLoaded", type);
-      </script>
-      
-      
+
+    </script>
+
+
 
 </body>
 
