@@ -129,7 +129,7 @@
 
 
 <body>
-    <div id="navbar-container" style="margin-top: 66px;"></div>
+    <div id="navbar-container"></div>
     <script>
     fetch("components/navbar.html")
         .then(res => res.text())
@@ -142,8 +142,11 @@
     <header class="header d-flex justify-content-center align-items-center">
         <div class="text-center texto-header animate__animated animate__fadeInDown">
           <h1 class="name">Felipe Valentín</h1>
-          <h2 class="role">Desarrollador</h2>
-          <h2 class="role">Docente Universitario</h2>
+          
+          <!-- role -->
+          <span id="typed-text" class="role fw-bold text-white"></span>
+
+
           <p class="description">Soy Ingeniero Civil Informático de la Universidad Católica de la Santísima Concepción.
             Tengo experiencia en ingeniería y ciencia de datos con Python, y gestión de bases de datos con GCP y BigQuery.
             Además, tengo experiencia en desarrollo web con framework PHP Laravel, e IOT con Arduino, Raspberry Pi y sensores.
@@ -325,6 +328,43 @@
 
     <!-- LinkedIn Badge -->
     <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
+
+    <script>
+        const phrases = [" Desarrollador ", " Docente Universitario "];
+        let currentPhrase = 0;
+        let currentChar = 1; // empezamos desde 1, para mantener el espacio inicial
+        let isDeleting = false;
+        const speed = 100;
+        const pause = 2000;
+      
+        const el = document.getElementById("typed-text");
+      
+        function type() {
+          const fullText = phrases[currentPhrase];
+          const visibleText = isDeleting
+            ? fullText.substring(0, currentChar--)
+            : fullText.substring(0, currentChar++);
+      
+          el.textContent = visibleText;
+      
+          if (!isDeleting && currentChar === fullText.length + 1) {
+            setTimeout(() => {
+              isDeleting = true;
+              type();
+            }, pause);
+          } else if (isDeleting && currentChar === 1) {
+            isDeleting = false;
+            currentPhrase = (currentPhrase + 1) % phrases.length;
+            setTimeout(type, 300);
+          } else {
+            setTimeout(type, isDeleting ? 50 : speed);
+          }
+        }
+      
+        document.addEventListener("DOMContentLoaded", type);
+      </script>
+      
+      
 
 </body>
 
