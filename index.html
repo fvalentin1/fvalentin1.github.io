@@ -41,6 +41,12 @@
             border-bottom: 10px solid #ffc107;
         }
 
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+
         body {
             font-family: 'Montserrat', sans-serif;
             font-optical-sizing: auto;
@@ -128,8 +134,11 @@
 
         .role-container {
             position: relative;
-            display: inline-block;
+            display: block;
             font-size: 2rem;
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
         }
 
         .role-container .placeholder {
@@ -146,6 +155,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             white-space: nowrap;
+            max-width: 100%;
         }
 
         .cursor {
@@ -188,12 +198,12 @@
             <h1 class="name">Felipe Valentín M.</h1>
 
             <!-- role -->
-            <h2 class="role-container">
+            <h4 class="role-container">
                 <span class="role fw-bold text-white">
                     <span id="typed-text"></span><span class="cursor">|</span>
                 </span>
                 <span class="placeholder">Docente Universitario</span>
-            </h2>
+            </h4>
 
 
             <p class="description">Soy Ingeniero Civil Informático de la Universidad Católica de la Santísima
